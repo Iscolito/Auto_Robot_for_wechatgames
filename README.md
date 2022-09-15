@@ -30,7 +30,7 @@
 
 3.有jre的用户也可以直接使用我打包的Catchsreen.jar文件
 
-4.如果没有java环境的话，可以使用我提供的exe打包版，但是考虑到exe4j的中间打包过程，可能会有不确定性
+4.如果没有java环境的话，可以使用我提供的exe打包版，下载Catchsreen.rar，解压之后保证exe和jre文件在同一个目录里即可。但是考虑到exe4j的中间打包过程，可能会有不确定性。
 在看到：
 ```bash
 `This executable was created with an evaluation version of exe4j`
