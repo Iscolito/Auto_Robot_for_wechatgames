@@ -27,3 +27,5 @@
 ```
 
 截图文件会以screenshot的名称保存在相应目录下
+
+3.有jre的用户也可以直接使用我打包的Catchsreen.jar文件
