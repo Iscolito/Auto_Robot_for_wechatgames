@@ -29,3 +29,10 @@
 截图文件会以screenshot的名称保存在相应目录下
 
 3.有jre的用户也可以直接使用我打包的Catchsreen.jar文件
+
+4.如果没有java环境的话，可以使用我提供的exe打包版，但是考虑到exe4j的中间打包过程，可能会有不确定性
+在看到：
+```bash
+`This executable was created with an evaluation version of exe4j`
+```
+点击确定即可开始截图，截图会被保存在和exe同路径的地方。
