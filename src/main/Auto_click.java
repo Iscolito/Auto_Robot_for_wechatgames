@@ -23,9 +23,10 @@ public class Auto_click {
 	/*捕捉鼠标两次点击位置构成的矩形区域*/
 	public BufferedImage CaptureScreen(int x, int y,int size) {	
 		listener selecter = new listener(x,y,size);
-		while(selecter.pos[1][1]==0) {robot.delay(10);}
-		int width = Math.abs(selecter.pos[0][0]-selecter.pos[1][0]),height=Math.abs(selecter.pos[0][1]-selecter.pos[1][1]);
-		return robot.createScreenCapture(new Rectangle(selecter.pos[0][0]+x,selecter.pos[0][1]+y,width,height));
+		while(selecter.count!=4) {robot.delay(10);}
+		int width = Math.abs(selecter.pos[1][0]-selecter.pos[2][0]),height=Math.abs(selecter.pos[1][1]-selecter.pos[2][1]);
+		selecter.exit();
+		return robot.createScreenCapture(new Rectangle(selecter.pos[1][0]+x,selecter.pos[1][1]+y,width,height));
 	}
 	/*输出截图到项目文件下*/
 	public void writeImageFile(BufferedImage screenshot) throws IOException {
